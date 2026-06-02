@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, ScanLine, X } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -21,7 +21,6 @@ interface Character {
   role: string;
   image: string;
   fallbackImage: string;
-  sourceUrl: string;
   accent: string;
   secondary: string;
   faction: string;
@@ -38,7 +37,6 @@ const CHARACTERS: Character[] = [
       role: 'The Loose Cannon',
       image: './images/char-jinx.jpg',
       fallbackImage: './images/char-jinx.jpg',
-      sourceUrl: 'https://arcane.fandom.com/wiki/File:Jinx_Season_1_Poster_1.jpg',
       accent: '#38D7FF',
       secondary: '#E958FF',
       faction: 'Zaun',
@@ -58,7 +56,6 @@ const CHARACTERS: Character[] = [
       role: 'The Piltover Enforcer',
       image: './images/char-vi.jpg',
       fallbackImage: './images/char-vi.jpg',
-      sourceUrl: 'https://arcane.fandom.com/wiki/File:Vi_Season_1_Poster_1.jpg',
       accent: '#FF3F74',
       secondary: '#F2B24D',
       faction: 'Piltover and Zaun',
@@ -395,19 +392,10 @@ export default function CharacterDeck() {
                     onClick={() => setDetailOpen(true)}
                     className="inline-flex items-center gap-2 rounded border px-4 py-3 font-body text-[11px] uppercase tracking-[0.18em] transition hover:bg-white/10"
                     style={{ color: activeChar.accent, borderColor: `${activeChar.accent}66` }}
-                  >
-                    <ScanLine size={15} />
-                    Open Dossier
-                  </button>
-                  <a
-                    href={activeChar.sourceUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded border border-white/10 px-4 py-3 font-body text-[11px] uppercase tracking-[0.18em] text-white/58 transition hover:border-white/25 hover:text-white"
-                  >
-                    <ExternalLink size={15} />
-                    Source
-                  </a>
+                   >
+                     <ScanLine size={15} />
+                     Open Dossier
+                   </button>
                 </div>
               </div>
             </div>
