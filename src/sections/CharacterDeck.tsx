@@ -33,35 +33,35 @@ interface Character {
 }
 
 const CHARACTERS: Character[] = [
-  {
-    name: 'JINX',
-    role: 'The Loose Cannon',
-    image: './images/real-jinx.jpg',
-    fallbackImage: './images/char-jinx.jpg',
-    sourceUrl: 'https://arcane.fandom.com/wiki/File:Jinx_Season_1_Poster_1.jpg',
-    accent: '#38D7FF',
-    secondary: '#E958FF',
-    faction: 'Zaun',
-    quote: 'Chaos is the only honest signal.',
-    description:
-      "Once a frightened child named Powder, Jinx became Zaun's volatile spark - brilliant, wounded, and impossible to contain.",
-    stats: { power: 85, agility: 90, tactics: 40 },
-    abilities: [
-      { name: 'Pow-Pow Minigun', description: 'Builds pressure through rapid fire and unsteady tempo.' },
-      { name: 'Fishbones Rocket', description: 'Turns distance into a blast radius.' },
-      { name: 'Death Rocket', description: 'A long-range final note for any chase.' },
-    ],
-    affiliations: ['Zaun Undercity', "Silco's Syndicate", 'Independent'],
-  },
-  {
-    name: 'VI',
-    role: 'The Piltover Enforcer',
-    image: './images/real-vi.jpg',
-    fallbackImage: './images/char-vi.jpg',
-    sourceUrl: 'https://arcane.fandom.com/wiki/File:Vi_Season_1_Poster_1.jpg',
-    accent: '#FF3F74',
-    secondary: '#F2B24D',
-    faction: 'Piltover and Zaun',
+    {
+      name: 'JINX',
+      role: 'The Loose Cannon',
+      image: './images/char-jinx.jpg',
+      fallbackImage: './images/char-jinx.jpg',
+      sourceUrl: 'https://arcane.fandom.com/wiki/File:Jinx_Season_1_Poster_1.jpg',
+      accent: '#38D7FF',
+      secondary: '#E958FF',
+      faction: 'Zaun',
+      quote: 'Chaos is the only honest signal.',
+      description:
+        "Once a frightened child named Powder, Jinx became Zaun's volatile spark - brilliant, wounded, and impossible to contain.",
+      stats: { power: 85, agility: 90, tactics: 40 },
+      abilities: [
+        { name: 'Pow-Pow Minigun', description: 'Builds pressure through rapid fire and unsteady tempo.' },
+        { name: 'Fishbones Rocket', description: 'Turns distance into a blast radius.' },
+        { name: 'Death Rocket', description: 'A long-range final note for any chase.' },
+      ],
+      affiliations: ['Zaun Undercity', "Silco's Syndicate", 'Independent'],
+    },
+    {
+      name: 'VI',
+      role: 'The Piltover Enforcer',
+      image: './images/char-vi.jpg',
+      fallbackImage: './images/char-vi.jpg',
+      sourceUrl: 'https://arcane.fandom.com/wiki/File:Vi_Season_1_Poster_1.jpg',
+      accent: '#FF3F74',
+      secondary: '#F2B24D',
+      faction: 'Piltover and Zaun',
     quote: 'Hit first. Ask better questions later.',
     description:
       'Vi carries the weight of the undercity in her fists, turning grief into forward motion with every Hextech punch.',
@@ -73,16 +73,15 @@ const CHARACTERS: Character[] = [
     ],
     affiliations: ['Piltover Wardens', 'Kiramman Household', 'Zaun Orphans'],
   },
-  {
-    name: 'CAITLYN',
-    role: 'The Sheriff of Piltover',
-    image: './images/real-caitlyn.jpg',
-    fallbackImage: './images/char-caitlyn.jpg',
-    sourceUrl: 'https://arcane.fandom.com/wiki/File:Caitlyn_Season_1_Poster_1.jpg',
-    accent: '#B994FF',
-    secondary: '#DDBE62',
-    faction: 'Piltover',
-    quote: 'Precision is mercy when the city is on fire.',
+    {
+      name: 'CAITLYN',
+      role: 'The Sheriff of Piltover',
+      image: './images/char-caitlyn.jpg',
+      fallbackImage: './images/char-caitlyn.jpg',
+      accent: '#B994FF',
+      secondary: '#DDBE62',
+      faction: 'Piltover',
+      quote: 'Precision is mercy when the city is on fire.',
     description:
       "Caitlyn's calm eye and stubborn conscience make her a rare force in Piltover: authority with a pulse.",
     stats: { power: 70, agility: 80, tactics: 95 },
@@ -93,16 +92,15 @@ const CHARACTERS: Character[] = [
     ],
     affiliations: ['Piltover Wardens', 'Kiramman Clan', 'Piltover Council'],
   },
-  {
-    name: 'JAYCE',
-    role: 'The Defender of Tomorrow',
-    image: './images/real-jayce.jpg',
-    fallbackImage: './images/char-jayce.jpg',
-    sourceUrl: 'https://arcane.fandom.com/wiki/File:Jayce_Season_1_Poster_1.jpg',
-    accent: '#F1C95F',
-    secondary: '#50C7FF',
-    faction: 'Piltover',
-    quote: 'Progress always asks who pays the cost.',
+    {
+      name: 'JAYCE',
+      role: 'The Defender of Tomorrow',
+      image: './images/char-jayce.jpg',
+      fallbackImage: './images/char-jayce.jpg',
+      accent: '#F1C95F',
+      secondary: '#50C7FF',
+      faction: 'Piltover',
+      quote: 'Progress always asks who pays the cost.',
     description:
       'Jayce turns invention into policy, then learns that every breakthrough casts a shadow across both cities.',
     stats: { power: 90, agility: 70, tactics: 85 },
@@ -113,16 +111,15 @@ const CHARACTERS: Character[] = [
     ],
     affiliations: ['Piltover Council', 'Talis Forge', 'Hextech Academy'],
   },
-  {
-    name: 'EKKO',
-    role: 'The Boy Who Shattered Time',
-    image: './images/real-ekko.jpg',
-    fallbackImage: './images/char-ekko.jpg',
-    sourceUrl: 'https://arcane.fandom.com/wiki/File:Ekko_Season_1_Poster_1.jpg',
-    accent: '#24F0A5',
-    secondary: '#FFE96B',
-    faction: 'Zaun',
-    quote: 'A second chance is still a choice.',
+    {
+      name: 'EKKO',
+      role: 'The Boy Who Shattered Time',
+      image: './images/char-ekko.jpg',
+      fallbackImage: './images/char-ekko.jpg',
+      accent: '#24F0A5',
+      secondary: '#FFE96B',
+      faction: 'Zaun',
+      quote: 'A second chance is still a choice.',
     description:
       'Ekko protects the future by refusing to surrender the past, bending time around the people Zaun keeps losing.',
     stats: { power: 75, agility: 95, tactics: 90 },
@@ -187,10 +184,7 @@ export default function CharacterDeck() {
   const imageWrapRef = useRef<HTMLDivElement>(null);
   const activeChar = CHARACTERS[activeIndex];
 
-  const sourceLinks = useMemo(
-    () => CHARACTERS.map((character) => character.sourceUrl).join(', '),
-    []
-  );
+
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -524,9 +518,7 @@ export default function CharacterDeck() {
           ))}
         </div>
 
-        <p className="mt-5 break-all font-body text-[10px] uppercase tracking-[0.16em] text-white/28">
-          Image sources: {sourceLinks}
-        </p>
+
       </div>
 
       {detailOpen ? (
